@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding:  0 10px ;
+    font-family: 'Lato',serif;
+}
+.container div{
+    padding: 5px;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: darkgoldenrod;
+}
+header h2{
+    width: 100%;
+    text-align: center;
+    margin: 35px 0;
+}
+#heading{
+    padding: 5px;
+    border: 1px solid black;
+    float: right;
+    margin-top: -7px;
+    margin-right: -7px;
+    color: white;
+}
+#box1 #heading{
+    background-color: tomato;
+}
+#box2 #heading{
+    background-color: rgb(8, 93, 119);
+}
+#box3 #heading{
+    background-color: rgb(98, 2, 136);
+}
+@media screen and (min-width: 922px)
+{
+    .container div{
+        width: calc(33.3333% - 20px);
+        float: left;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 921px)
+{
+    #box1,#box2{
+        width: calc(50% - 20px);
+        float: left;
+    }
+    #box3{
+        width: calc(100% - 20px);
+        float: left;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    .container div{
+        width: calc(100% - 20px);
+        float: left;
+    }
+}
